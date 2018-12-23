@@ -1,4 +1,4 @@
-package org.mounting.studentrent.domain;
+package org.mounting.studentrent.domain.rentier;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -7,12 +7,12 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class LocationPreferences {
+public class RentierPreferences {
 
     private String adress;
     private String city;
     private String postCode;
     private Rentier rentier;
-    private RentPlacePreferences rentPlacePreferences;
+    private RentierPlacePreferences rentierPlacePreferences;
 
 }

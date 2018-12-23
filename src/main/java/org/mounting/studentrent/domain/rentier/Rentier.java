@@ -1,4 +1,4 @@
-package org.mounting.studentrent.domain;
+package org.mounting.studentrent.domain.rentier;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,9 +9,10 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
-public class Offerer {
+public class Rentier {
 
     private Integer id;
     private String userName;
-    private List<RentPlaces> rentPlaces;
+    private List<RentierPreferences> rentierPreferences;
+    private RentierPlacePreferences rentierMasterPreferences;
 }

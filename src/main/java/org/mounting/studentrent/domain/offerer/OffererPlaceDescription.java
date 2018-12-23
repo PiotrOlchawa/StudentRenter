@@ -1,4 +1,4 @@
-package org.mounting.studentrent.domain;
+package org.mounting.studentrent.domain.offerer;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -7,7 +7,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class RentPlacePreferences {
+public class OffererPlaceDescription {
 
     private Integer id;
     private Integer distance;
