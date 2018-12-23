@@ -13,6 +13,6 @@ public class Rentier {
 
     private Integer id;
     private String userName;
-    private List<RentierPreferences> rentierPreferences;
-    private RentierPlacePreferences rentierMasterPreferences;
+    private List<RentierLocationPreferences> rentierLocationPreferences;
+    private RentierLocalPreferences rentierMasterPreferences;
 }

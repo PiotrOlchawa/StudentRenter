@@ -7,12 +7,13 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class RentierPreferences {
+public class RentierLocationPreferences {
 
+    private Integer id;
     private String adress;
     private String city;
     private String postCode;
     private Rentier rentier;
-    private RentierPlacePreferences rentierPlacePreferences;
+    private RentierLocalPreferences rentierLocalPreferences;
 
 }

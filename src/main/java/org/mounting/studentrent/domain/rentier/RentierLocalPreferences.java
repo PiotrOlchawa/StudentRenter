@@ -7,11 +7,11 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class RentierPlacePreferences {
+public class RentierLocalPreferences {
 
     private Integer id;
     private Integer distance;
     private Integer rooms;
     private Rentier rentier;
-    private RentierPreferences rentierPreferences;
+    private RentierLocationPreferences rentierLocationPreferences;
 }
