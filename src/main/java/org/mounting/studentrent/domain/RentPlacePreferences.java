@@ -7,9 +7,9 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class User {
+public class RentPlacePreferences {
 
     private Integer id;
-    private String userName;
-
+    private Integer distance;
+    private Integer rooms;
 }

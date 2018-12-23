@@ -4,10 +4,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
-public class UserBaseLocation {
+public class Offerer {
 
-
+    private Integer id;
+    private String userName;
+    private List<RentPlaces> rentPlaces;
 }

@@ -1,5 +1,5 @@
 package org.mounting.studentrent.domain;
 
-public enum RentStatus {
+public enum RentPlaceStatus {
     AVAILIABLE,NOT_AVAILIABLE
 }

@@ -7,12 +7,12 @@ import lombok.Setter;
 @Getter
 @Setter
 @NoArgsConstructor
-public class RentPlaces {
+public class LocationPreferences {
 
-    private Integer id;
-    private Long lat;
-    private Long lon;
-    private Offerer offerer;
-    private RentPlaceStatus rentPlaceStatus;
+    private String adress;
+    private String city;
+    private String postCode;
+    private Rentier rentier;
     private RentPlacePreferences rentPlacePreferences;
+
 }
