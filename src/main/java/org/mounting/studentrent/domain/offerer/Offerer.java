@@ -20,11 +20,13 @@ public class Offerer {
     @Column(name = "ID")
     @NotNull
     private Integer id;
+
     @Column(name = "USERNAME")
     @NotNull
     private String userName;
+
     @OneToMany(
-        targetEntity = OffererPlace.class,
+            targetEntity = OffererPlace.class,
             mappedBy = "offerer",
             cascade = CascadeType.ALL,
             fetch = FetchType.LAZY

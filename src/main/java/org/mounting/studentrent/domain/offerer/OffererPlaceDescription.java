@@ -19,9 +19,11 @@ public class OffererPlaceDescription {
     @NotNull
     @Column(name = "ID")
     private Integer id;
+
     @Column(name = "DISTANCE")
     @NotNull
     private Integer distance;
+    
     @Column(name = "ROOMS")
     private Integer rooms;
 }

@@ -19,18 +19,23 @@ public class OffererPlace {
     @Column(name = "ID")
     @NotNull
     private Integer id;
+
     @Column(name = "LAT")
     @NotNull
     private Long lat;
+
     @Column(name = "LON")
     @NotNull
     private Long lon;
+
     @JoinColumn(name = "OFFERER_ID")
     @ManyToOne
     private Offerer offerer;
+
     @Column(name = "OFFERER_PLACE_STATUS")
     @Enumerated(EnumType.STRING)
     private OffererPlaceStatus offererPlaceStatus;
+
     @OneToOne(
             cascade = CascadeType.ALL,
             fetch = FetchType.EAGER
