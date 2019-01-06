@@ -24,6 +24,12 @@ public class Rentier {
     @Column(name = "RENTIER_NAME", unique = true)
     private String rentierName;
 
+    @Column(name = "RENTIER_EMAIL", unique = true)
+    private String rentierEmail;
+
+    @Column(name = "RENTIER_PHONE", unique = true)
+    private String rentierPhone;
+
     @OneToMany(
             targetEntity = RentierLocalPreferences.class,
             fetch = FetchType.LAZY,

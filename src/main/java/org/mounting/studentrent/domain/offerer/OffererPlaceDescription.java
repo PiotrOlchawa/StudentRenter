@@ -20,10 +20,10 @@ public class OffererPlaceDescription {
     @Column(name = "ID")
     private Integer id;
 
-    @Column(name = "DISTANCE")
+    @Column(name = "SIZE")
     @NotNull
-    private Integer distance;
-    
+    private Integer size;
+
     @Column(name = "ROOMS")
     private Integer rooms;
 }

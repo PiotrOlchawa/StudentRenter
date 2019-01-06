@@ -20,16 +20,29 @@ public class OffererPlace {
     @NotNull
     private Integer id;
 
+    @Column(name = "STREET")
+    private String street;
+
+    @Column(name = "STREET_NUMBER")
+    private Integer streetNumber;
+
+    @Column(name = "APT_NUMBER")
+    private Integer aptNumber;
+
+    @Column(name = "POST_CODE")
+    private Integer postCode;
+
+    @Column(name = "CITY")
+    String City;
+
     @Column(name = "LAT")
-    @NotNull
     private Long lat;
 
     @Column(name = "LON")
-    @NotNull
     private Long lon;
 
-    @JoinColumn(name = "OFFERER_ID")
     @ManyToOne
+    @JoinColumn(name = "OFFERER_ID")
     private Offerer offerer;
 
     @Column(name = "OFFERER_PLACE_STATUS")
@@ -41,5 +54,5 @@ public class OffererPlace {
             fetch = FetchType.EAGER
     )
     @JoinColumn(name ="OFFERED_PLACE_DESCRIPTION_ID" )
-    private OffererPlaceDescription rentierPlacePreferences;
+    private OffererPlaceDescription offererPlaceDescription;
 }

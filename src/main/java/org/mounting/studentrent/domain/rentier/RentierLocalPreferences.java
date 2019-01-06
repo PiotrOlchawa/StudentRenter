@@ -26,10 +26,7 @@ public class RentierLocalPreferences {
     @Column(name = "ROOMS")
     private Integer rooms;
 
-    @OneToOne(
-            fetch = FetchType.EAGER,
-            cascade = CascadeType.ALL
-    )
+    @ManyToOne
     @JoinColumn(name = "RENTIER_ID")
     private Rentier rentier;
 
